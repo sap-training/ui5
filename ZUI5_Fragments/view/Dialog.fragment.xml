@@ -1,0 +1,21 @@
+ <Dialog xmlns="sap.ui.commons"
+	title="XML Fragment Dialog">
+		<buttons>
+		    <Button text="Close" press="closeDialog"/>
+		</buttons> <!-- sap.ui.core.Control -->
+		<content>
+		
+	        <SimpleForm	xmlns="sap.ui.layout.form">
+	            <content>
+				    <Label xmlns="sap.ui.commons"
+				    	text="Please enter your name:"
+				    	labelFor="myField"/>
+				    	
+				    <TextField xmlns="sap.ui.commons"
+				    	id="myField"/>
+		    
+				</content> <!-- sap.ui.core.Control -->
+
+	        </SimpleForm>
+		</content> <!-- sap.ui.core.Control -->
+</Dialog>
