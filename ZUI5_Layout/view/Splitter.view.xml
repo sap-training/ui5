@@ -1,0 +1,28 @@
+<mvc:View xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.ui.commons"
+	controllerName="sap.training.view.Splitter"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<l:Splitter height="500px" orientation="Horizontal">
+	    <l:contentAreas>
+		    <Button height="100%" width="100%" text="Content 1">
+                <layoutData>
+                    <l:SplitterLayoutData size="300px"/>
+                </layoutData>
+            </Button>
+            <Button height="100%" width="100%" text="Content 2">
+                <layoutData>
+                    <l:SplitterLayoutData size="auto"/>
+                </layoutData>
+            </Button>
+            <Button height="100%" width="100%" text="Content 3">
+                <layoutData>
+                    <l:SplitterLayoutData size="200px" minSize="200px"/>
+                </layoutData>
+            </Button>
+		</l:contentAreas>
+	</l:Splitter>
+</mvc:View>
+

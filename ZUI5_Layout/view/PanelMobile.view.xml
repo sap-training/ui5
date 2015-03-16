@@ -1,0 +1,38 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m"
+	controllerName="sap.training.view.PanelMobile" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+
+    <Panel
+    	width="350px"
+    	expandable="true"
+    	expanded="true">
+		<headerToolbar>
+		    <Toolbar>
+		        <content>
+		    		<Text text="Person Data"/>
+		    	    <ToolbarSpacer />
+		    	    <Button 
+		    		    icon="sap-icon://save"
+		    		    press="onSave"/>
+		    		<Button 
+		    		    icon="sap-icon://sys-cancel"
+		    		    press="onCancel"/>
+		    		</content> 
+		    </Toolbar>
+		</headerToolbar> 
+		<content>
+		    <f:SimpleForm>
+    		    <f:content>
+    		        <Label text="Name"/>
+	    		    <Input type="Text" value="Knecht"/>
+	    		    <Label text="First Name"/>
+	    		    <Input type="Text" value="Christoph"/>
+    		    </f:content> 
+		    </f:SimpleForm>
+		</content> 
+    </Panel>
+    
+</core:View>

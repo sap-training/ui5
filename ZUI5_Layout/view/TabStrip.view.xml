@@ -1,0 +1,70 @@
+<mvc:View xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.commons.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.ui.commons"
+	controllerName="sap.training.view.TabStrip"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<TabStrip   height="200px"
+	            width="350px">
+		<tabs>
+		    <Tab>
+		        <title>
+	    		    <core:Title text="Person Data" icon="sap-icon://employee"/>
+	    		</title> 
+		        <content>
+		    	    <l:MatrixLayout>
+		    		    <l:rows>
+		    		        <l:MatrixLayoutRow>
+		    		    		<l:cells>
+		    		    		    <l:MatrixLayoutCell>
+	    		    		    		<l:content>
+	    		    		    		    <Label text="Name"/>
+	    		    		    		</l:content>
+		    		    		    </l:MatrixLayoutCell>
+	    		    		        <l:MatrixLayoutCell> 
+	    		    		    		<l:content>
+	    		    		    		    <TextField value="Knecht"/>
+	    		    		    		</l:content>
+		    		    		    </l:MatrixLayoutCell>
+		    		    		</l:cells> 
+	    		            </l:MatrixLayoutRow>
+	    		            <l:MatrixLayoutRow>
+    		    		        <l:cells>
+	    		    		        <l:MatrixLayoutCell>
+    		    		    		    <l:content>
+    		    		    		        <Label text="First Name"/>
+	    		    		    		</l:content>
+		    		    		    </l:MatrixLayoutCell>
+		    		    		    <l:MatrixLayoutCell>
+    		    		    		    <l:content>
+		    		    		            <TextField value="Christoph"/>
+	    		    		    		</l:content>
+		    		    		    </l:MatrixLayoutCell>
+    		    		        </l:cells> 
+	    		            </l:MatrixLayoutRow>
+    		            </l:rows> 
+	                </l:MatrixLayout>
+	    		</content>
+		    </Tab>
+		    
+		    <Tab>
+	            <title>
+    		        <core:Title text="Company" icon="sap-icon://company-view"/>
+	    		</title>
+	    		<content>
+		    	    <TextView text="just a demo ;-)" width="300px" textAlign="Center" design="Bold" semanticColor="Positive" />
+	    		</content> 
+		    </Tab>
+		    
+		    <Tab>
+	            <title>
+    		        <core:Title text="Contact" icon="sap-icon://contacts"/>
+	    		</title>
+	    		<content>
+		    	    <TextView text="Don't worry!" width="300px" textAlign="Center" design="Bold" semanticColor="Negative" />
+	    		</content> 
+		    </Tab>
+	    </tabs> 
+    </TabStrip>
+</mvc:View>
