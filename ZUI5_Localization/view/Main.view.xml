@@ -1,0 +1,39 @@
+<mvc:View xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.commons.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.ui.commons"
+	controllerName="sap.training.view.Main"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	resourceBundleName="sap.training.i18n.messageBundle"
+	resourceBundleAlias="i18n">
+<!--resourceBundleLocale="en">-->
+	
+	<TextView id="myTextView1" 
+		      design="H4" semanticColor="Positive"/>
+		      
+	<html:br/>
+	
+    <TextView id="myTextView2" />
+	
+	 <f:SimpleForm>
+	    <f:title>
+	        <core:Title text="Person Data" />
+	    </f:title>
+		<f:content>
+	        
+	        <Label text="{i18n>mainLabelFirstName}"/>
+		    <TextView text="{/employee/firstName}"/>
+		    <Label text="{i18n>mainLabelLastName}"/>
+			<TextView text="{/employee/lastName}"/>
+			<Label text="{i18n>mainLabelBirthday}"/>
+			<TextView text="{path: '/employee/birthday',
+                            type: 'sap.ui.model.type.Date',
+                            formatOptions: { source: {pattern: 'yyyy/MM/dd'}, style: 'medium' }
+                            }" />
+		  
+		</f:content>
+	</f:SimpleForm>
+	
+
+</mvc:View>
